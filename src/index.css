@@ -17,7 +17,7 @@ code {
   color: white;
   width: 200px;
   padding: 20px;
-  height: 792px;
+  height: 667px;
 }
 
 .sidebar ul {
@@ -57,7 +57,7 @@ code {
 }
 
 .main-content {
-  margin-top: -855px;
+  margin-top: -727px;
   margin-left: 220px; /* Elige un valor que sea mayor que el ancho del menú lateral */
   padding: 20px;
 }
