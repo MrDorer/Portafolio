@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css';
-import DashboardHeader from './DashboardHeader';
-import DashboardStats from './DashboardStats';
-import Sidebar from './Sidebar';
+import DashboardHeader from './components/DashboardHeader';
+import DashboardStats from './components/DashboardStats';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
