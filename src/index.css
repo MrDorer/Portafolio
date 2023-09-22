@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.dashboard-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.stat {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.main-content {
+  margin-left: 220px; /* Elige un valor que sea mayor que el ancho del menú lateral */
+  padding: 20px;
+}
