@@ -5,9 +5,9 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="overflow-auto app">
       <Sidebar />
-      <div className="main-content">
+      <div className="overflow-auto main-content">
         <DashboardStats />
       </div>
     </div>
