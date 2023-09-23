@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import nube from "../assets/nube2.jpg"; // Importa la imagen de fondo de la ciudad
+import nube2 from "../assets/nube.jpeg" // Importa la imagen de fondo de la página
+import img3 from "../assets/img3.jpg"
+import img4 from "../assets/im4.jpg"
 const estiloSelect = {
   padding: "10px",
   fontSize: "16px",
@@ -7,20 +10,25 @@ const estiloSelect = {
   borderRadius: "8px",
   marginBottom: "20px",
   backgroundColor: "#FFFFF",
+  background: `url(${nube2})`, // Usa la imagen de fondo de la ciudad importada
+  backgroundSize: "cover",
   textAlign: "center",
 };
 
 const estiloCityInfo = {
-  marginBottom: "10px", // Margen inferior fijo para separación
+  marginBottom: "10px",
   border: "1px solid #ccc",
   padding: "10px",
   borderRadius: "8px",
-  backgroundColor: "#FFFFFF",
+  background: `url(${nube2})`, // Usa la imagen de fondo de la ciudad importada
+  backgroundSize: "cover",
   maxWidth: "300px",
   margin: "0 auto",
+  color: "#000", // Cambia el color del texto a negro (#000)
 };
 
 const estiloContainer = {
+  
   textAlign: "center",
   padding: "20px",
 };
@@ -28,15 +36,28 @@ const estiloContainer = {
 const estiloTitle = {
   fontSize: "48px",
   color: "#00000",
+  
 };
-
 const estiloBody = {
-  background: "linear-gradient(to bottom, #C5FBFF, #B369F5)",
+  background: `url(${nube2})`, // Usa la imagen de fondo de la página importada
+  backgroundSize: "cover",
+  backgroundAttachment: "fixed", // Fondo estático
   minHeight: "100vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
+  color: "#000", // Cambia el color del texto a negro (#000)
+};
+
+const estiloColumns = {
+  display: "grid",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gap: "20px",
+};
+
+const estiloColumn = {
+  width: "100%",
 };
 
 function DashboardStats() {
@@ -137,12 +158,14 @@ function DashboardStats() {
         ) : error ? (
           <p>{error}</p>
         ) : (
-          <div>
+          <div style={estiloColumns}>
             {estadoSeleccionado.map((ciudad, index) => (
-              <div key={index} style={estiloCityInfo}>
-                <p>
-                  {ciudad.name} - <i>{ciudad.skydescriptionlong}</i>
-                </p>
+              <div key={index} style={estiloColumn}>
+                <div style={estiloCityInfo}>
+                  <p>
+                    {ciudad.name} - <i>{ciudad.skydescriptionlong}</i>
+                  </p>
+                </div>
               </div>
             ))}
           </div>
