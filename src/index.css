@@ -13,51 +13,31 @@ code {
 }
 
 .sidebar {
-  background-color: #333;
+  list-style: none;
+  position: fixed;
+  background-color: #333333;
   color: white;
   width: 200px;
   padding: 20px;
-  height: 667px;
+  height: 100%; /* Set height to 100% to cover the entire viewport */
+  border-right: solid black;
 }
 
 .sidebar ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .sidebar li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .sidebar a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.dashboard-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 
-.dashboard-stats {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-}
 
-.stat {
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  flex: 1;
-  margin: 0 10px;
-}
 
-.main-content {
-  margin-top: -727px;
-  margin-left: 220px; /* Elige un valor que sea mayor que el ancho del menú lateral */
-  padding: 20px;
-}
