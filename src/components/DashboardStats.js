@@ -13,8 +13,7 @@ const estiloSelect = {
   borderRadius: "8px",
   backgroundColor: "#FFFFF",
   background: `url(${nube2})`,
-
-
+  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)", // Añadir sombra
 };
 
 const estiloCityInfo = {
@@ -27,6 +26,8 @@ const estiloCityInfo = {
   maxWidth: "300px",
   margin: "0 auto",
   color: "#000",
+  boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)", // Añadir sombra
+
 };
 
 const estiloContainer = {
