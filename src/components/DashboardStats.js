@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import nube from "../assets/nube2.jpg"; // Importa la imagen de fondo de la ciudad
-import nube2 from "../assets/nube.jpeg" // Importa la imagen de fondo de la página
+import nube from "../assets/nube2.jpg";
+import nube2 from "../assets/nube.jpeg"
 import img3 from "../assets/img3.jpg"
 import img4 from "../assets/im4.jpg"
 const estiloSelect = {
@@ -10,7 +10,7 @@ const estiloSelect = {
   borderRadius: "8px",
   marginBottom: "20px",
   backgroundColor: "#FFFFF",
-  background: `url(${nube2})`, // Usa la imagen de fondo de la ciudad importada
+  background: `url(${nube2})`,
   backgroundSize: "cover",
   textAlign: "center",
 };
@@ -20,11 +20,11 @@ const estiloCityInfo = {
   border: "1px solid #ccc",
   padding: "10px",
   borderRadius: "8px",
-  background: `url(${nube2})`, // Usa la imagen de fondo de la ciudad importada
+  background: `url(${nube2})`,
   backgroundSize: "cover",
   maxWidth: "300px",
   margin: "0 auto",
-  color: "#000", // Cambia el color del texto a negro (#000)
+  color: "#000",
 };
 
 const estiloContainer = {
@@ -39,15 +39,15 @@ const estiloTitle = {
   
 };
 const estiloBody = {
-  background: `url(${nube2})`, // Usa la imagen de fondo de la página importada
+  background: `url(${nube2})`,
   backgroundSize: "cover",
-  backgroundAttachment: "fixed", // Fondo estático
+  backgroundAttachment: "fixed",
   minHeight: "100vh",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  color: "#000", // Cambia el color del texto a negro (#000)
+  color: "#000",
 };
 
 const estiloColumns = {
