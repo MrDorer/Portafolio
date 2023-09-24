@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import nube from "../assets/nube2.jpg";
-import nube2 from "../assets/nube.jpeg"
-import img3 from "../assets/img3.jpg"
-import img4 from "../assets/im4.jpg"
+
+import nube2 from "../assets/nube.jpeg";
+import img3 from "../assets/img3.jpg";
+import img4 from "../assets/im4.jpg";
+
+
 const estiloSelect = {
   padding: "10px",
   fontSize: "16px",
   width: "300px",
   borderRadius: "8px",
-  marginBottom: "20px",
   backgroundColor: "#FFFFF",
   background: `url(${nube2})`,
-  backgroundSize: "cover",
-  textAlign: "center",
+
+
 };
 
 const estiloCityInfo = {
@@ -28,36 +30,51 @@ const estiloCityInfo = {
 };
 
 const estiloContainer = {
-  
   textAlign: "center",
   padding: "20px",
+  maxWidth: "calc(100% - 250px)", // Adjust the width to leave space for the sidebar
 };
 
 const estiloTitle = {
   fontSize: "48px",
   color: "#00000",
-  
 };
+
 const estiloBody = {
   background: `url(${nube2})`,
   backgroundSize: "cover",
   backgroundAttachment: "fixed",
   minHeight: "100vh",
   display: "flex",
-  flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   color: "#000",
+
+  flex: "1", // Take up all available space
+  marginLeft: "200px", // Move content 200px to the right
+
 };
 
 const estiloColumns = {
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
   gap: "20px",
+  justifyContent: "center", /* Add this line to center the grid horizontally */
+  alignItems: "center", /* Add this line to center the grid vertically */
 };
 
 const estiloColumn = {
   width: "100%",
+  textAlign: "center", /* Center the content within each column */
+};
+
+const estiloSidebar = {
+  background: "#333",
+  color: "white",
+  width: "200px",
+  padding: "20px",
+  height: "100vh",
+  position: "fixed",
 };
 
 function DashboardStats() {
