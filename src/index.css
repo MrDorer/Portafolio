@@ -34,7 +34,7 @@ code {
 .sidebar li {
   margin-bottom: 30px;
   padding: 4px;
-  border: solid white 1px;
+  border: solid white 1px; /*Si no les gusta el borde, con este lo pueden quitar*/
   border-radius: 4px;
 }
 
