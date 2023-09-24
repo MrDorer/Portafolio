@@ -5,8 +5,7 @@ function Sidebar() {
     <div className="sidebar">
       <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Estadísticas</a></li>
-        <li><a href="#">Configuración</a></li>
+        <li><a href="#">Clima</a></li>
       </ul>
     </div>
   );
