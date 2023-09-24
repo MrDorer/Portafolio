@@ -19,8 +19,10 @@ code {
   color: white;
   width: 200px;
   padding: 20px;
+
   height: 100%; /* Set height to 100% to cover the entire viewport */
   border-right: solid black;
+
 }
 
 .sidebar ul {

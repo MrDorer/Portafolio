@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import nube from "../assets/nube2.jpg";
+
 import nube2 from "../assets/nube.jpeg";
 import img3 from "../assets/img3.jpg";
 import img4 from "../assets/im4.jpg";
+
 
 const estiloSelect = {
   padding: "10px",
@@ -11,6 +13,8 @@ const estiloSelect = {
   borderRadius: "8px",
   backgroundColor: "#FFFFF",
   background: `url(${nube2})`,
+
+
 };
 
 const estiloCityInfo = {
@@ -45,8 +49,10 @@ const estiloBody = {
   alignItems: "center",
   justifyContent: "center",
   color: "#000",
+
   flex: "1", // Take up all available space
   marginLeft: "200px", // Move content 200px to the right
+
 };
 
 const estiloColumns = {
