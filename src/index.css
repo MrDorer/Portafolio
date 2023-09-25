@@ -11,17 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* CSS */
-/* CSS */
 
 .sidebar {
-  position: fixed;
-  background-color: #333333;
+  background-color: #333;
   color: white;
   width: 200px;
   padding: 20px;
-  height: 100%; /* Cubrir todo el viewport */
-  border-right: 1px solid black;
+  height: 667px;
 }
 
 .sidebar ul {
@@ -30,30 +26,38 @@ code {
 }
 
 .sidebar li {
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 10px;
-  text-align: center; /* Centrar el texto */
-  transition: background-color 0.3s; /* Efecto de transición para el color de fondo */
+  margin-bottom: 10px;
 }
 
-/* Cambiar el fondo de los botones a gris claro */
-.sidebar li a {
-  background-color: #464545; /* Gris claro */
+.sidebar a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  display: block;
-  padding: 10px;
-  border-radius: 10px;
+  font-size: 16px;
 }
 
-.sidebar li a:hover {
-  background-color: #555; /* Cambiar el color de fondo al pasar el mouse */
+.dashboard-header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Estilo para enlaces activos (puedes agregar una clase "active" al enlace actual) */
-.sidebar li a.active {
-  background-color: #555; /* Color de fondo para el enlace activo */
+.dashboard-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.stat {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.main-content {
+  margin-top: -727px;
+  margin-left: 220px; /* Elige un valor que sea mayor que el ancho del menú lateral */
+  padding: 20px;
 }
